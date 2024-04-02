@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample Site</title>
+  <script src="web.js"></script>
+  <style>
+    body { margin: 0px; 
+    background: black;
+height: 100vh;}
+    .container{
+        width: 100vw;
+        height: calc(50% - 40px);
+        background: rgb(31, 31, 31);
+       
+    }
+    .nadpis{
+        color:white;
+        padding: 20px;
+        width: 80%;
+        font-size: 60px;
+    }
+    .ele{
+        background: rgb(0, 255, 221);
+        border-radius: 40px;
+        padding:30px;
+        margin: 15px;
+        display: inline-block;  
+        font-size: 50px;
+    }
+    .elenadpis{
+        font-weight: bold;
+        display: inline-block;
+    }
+    .eledata{
+        display: inline-block;  
+    }
+  </style>
+</head>
+<body>
+
+ <div style="margin-bottom: 40px; border-bottom-left-radius: 40px ; border-bottom-right-radius: 40px ;" class="container">
+    <center>
+    <div class="nadpis">Tělo</div>
+    </center>
+    <div class="ele">
+        <div class="elenadpis">
+            Hmax:
+        </div>
+        <div class="eledata" id="Hmax1">
+            239.9m
+        </div>
+    </div>
+    <div class="ele">
+        <div class="elenadpis">
+            Last GPS update:
+        </div>
+        <div class="eledata" id="gps_update_1">
+            12:07:35
+        </div>
+    </div>
+    <div class="ele" >
+        <div class="elenadpis">
+            Last radio update:
+        </div>
+        <div class="eledata" id="radio_update_1">
+            12:07:35
+        </div>
+    </div>
+    <div class="ele" id="gps_click_1">
+        <div class="elenadpis">
+            GPS:
+        </div>
+        <div class="eledata" id="gps_1">
+            0.000000 0.000000000
+        </div>
+    </div>
+
+ </div>
+ <div style="margin-top: 40px; border-top-left-radius: 40px ; border-top-right-radius: 40px ;" class="container">
+    <center>
+    <div class="nadpis">Špička</div>
+    </center>
+    <div class="ele">
+        <div class="elenadpis">
+            Last GPS update:
+        </div>
+        <div class="eledata" id="gps_update_0">
+            12:07:35
+        </div>
+    </div>
+    <div class="ele" >
+        <div class="elenadpis">
+            Last radio update:
+        </div>
+        <div class="eledata" id="radio_update_0">
+            12:07:35
+        </div>
+    </div>
+    <div class="ele" id="gps_click_0">
+        <div class="elenadpis">
+            GPS:
+        </div>
+        <div class="eledata" id="gps_0">
+            0.000000 0.000000000
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>
